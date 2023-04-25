@@ -11,26 +11,13 @@ namespace primer_parcial_solid_transporte
             List<ITransporte> transportes = new List<ITransporte>();
             TransporteRepository transporteRepository = new TransporteRepository(); // No es utilizado en ninguna parte
 
-            Avion avion1 = new Avion();
-            avion1._nombre = "AVION 01";
-            avion1._velocidadActual = 0;
-            avion1._velocidadMaxima = 100;
-            avion1._alturaActual = 0;
-            avion1._alturaMaxima = 100;
+            Avion avion1 = new Avion("AVION 01", 0, 100, 0, 100);
             transportes.Add(avion1);
 
-            Avion avion2 = new Avion();
-            avion2._nombre = "AVION 02";
-            avion2._velocidadActual = 0;
-            avion2._velocidadMaxima = 100;
-            avion2._alturaActual = 0;
-            avion2._alturaMaxima = 100;
+            Avion avion2 = new Avion("AVION 02", 0, 100, 0, 100);
             transportes.Add(avion2);
 
-            Tren tren1 = new Tren();
-            tren1._nombre = "TREN 01";
-            tren1._velocidadActual = 0;
-            tren1._velocidadMaxima = 100;
+            Tren tren1 = new Tren("TREN 01", 0, 100);
             transportes.Add(tren1);
 
             Console.WriteLine("Inicio del viaje :)");
