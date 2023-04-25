@@ -9,6 +9,7 @@ namespace primer_parcial_solid_transporte
         {
 
             List<ITransporte> transportes = new List<ITransporte>();
+            TransporteRepository transporteRepository = new TransporteRepository(); // No es utilizado en ninguna parte
 
             Avion avion1 = new Avion();
             avion1._nombre = "AVION 01";
