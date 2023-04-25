@@ -38,10 +38,5 @@ namespace primer_parcial_solid_transporte
                 this._velocidadActual = 0;
             }
         }
-
-        public void Volar(int altitud)
-        {
-            return;
-        }
     }
 }
