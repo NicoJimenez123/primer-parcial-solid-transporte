@@ -36,11 +36,5 @@ namespace primer_parcial_solid_transporte
         {
             return;
         }
-
-        public void guardarEnBD()
-        {
-            TransporteRepository repository = new TransporteRepository();
-            repository.guardar(this);
-        }
     }
 }
