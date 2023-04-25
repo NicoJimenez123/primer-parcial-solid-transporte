@@ -11,6 +11,5 @@ namespace primer_parcial_solid_transporte
         void Acelerar(int velocidad);
         void Desacelerar(int velocidad);
         void Volar(int altitud);
-        void guardarEnBD();
     }
 }
