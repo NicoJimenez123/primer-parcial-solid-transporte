@@ -12,6 +12,13 @@ namespace primer_parcial_solid_transporte
         public int _velocidadActual;
         public int _velocidadMaxima;
 
+        public Tren(string nombre, int velocidadActual, int velocidadMaxima)
+        {
+            _nombre = nombre;
+            _velocidadActual = velocidadActual;
+            _velocidadMaxima = velocidadMaxima;
+        }
+
         public void Acelerar(int velocidad)
         {
             if ((this._velocidadActual + velocidad) <= this._velocidadMaxima)

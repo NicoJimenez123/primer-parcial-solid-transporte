@@ -14,6 +14,15 @@ namespace primer_parcial_solid_transporte
         public int _alturaActual;
         public int _alturaMaxima;
 
+        public Avion(string nombre, int velocidadActual, int velocidadMaxima, int alturaActual, int alturaMaxima)
+        {
+            _nombre = nombre;
+            _velocidadActual = velocidadActual;
+            _velocidadMaxima = velocidadMaxima;
+            _alturaActual = alturaActual;
+            _alturaMaxima = alturaMaxima;
+        }
+
         public void Acelerar(int velocidad)
         {
             if ((this._velocidadActual + velocidad) <= this._velocidadMaxima)
